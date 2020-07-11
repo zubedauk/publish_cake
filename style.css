@@ -1,0 +1,303 @@
+/*  Add your styling here */
+* {
+    margin:0;
+    padding:0;
+}
+html{
+   font-size: 16px;
+    color:white;
+    font-family: monospace;
+}
+/*****************generic classes**********/
+#header,#main,#footer{
+    width:100%;
+    padding: 1%; 
+    
+}
+
+/*************header***********************************************/
+#header{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+#header-wrape{
+   
+}
+.logo-content{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#img-logo{
+  
+    width:20%;
+    
+}
+
+
+#img-contact{
+    
+    width:20%;
+    
+    display: flex;
+    
+}
+.logo-img{
+    
+    width:100%;
+    height:auto;
+}
+
+.contact{
+    
+    width:100%;
+    height:auto;
+    
+}
+/***************nave bar*****************/
+
+.nav-bar{
+    width: 100%;
+    color:white;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+
+.navigation{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list-item{
+    background-color:darksalmon;
+    width: 40%;
+    height: 4rem;
+    margin-top: 0.5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 1rem;
+   
+}
+/*************main*************/
+
+/**********************home-section****************/
+
+.home-section{
+   
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+}
+.home-info{
+    
+    margin:0;
+    padding:0;
+    width:34%;
+    display: flex;
+    flex-direction: column;
+}
+.home-info-sidebar{
+    color:#f094dc;
+    margin-top:0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.side-bar-heading{
+    color: #f094dc; 
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.side-bar-detail{
+    color: #f094dc;
+}
+/******************home-images******************/
+.home-images{
+    width:65%;
+}
+.home-container-zoom-img{
+    width:100%;
+}
+.home-zoom-img{
+    width:100%;
+}
+.home-container-small-img-bar{
+    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.home-container-small-img{
+ width:24%; 
+
+}
+.home-container-small-img:hover{
+    cursor: pointer;
+}
+.home-small-img{
+    width:100%;
+    height:10rem;
+}
+.side-bar-detail{
+
+}
+/****************info-section*******************/
+.info-section{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.info-container-zoom-img{
+    width:100%;
+}
+.info-super-img{
+    width:100%;
+}
+.info-text-content{
+    width:100%;
+    padding:0.5%;
+    background-color: #fcffe8;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-section-title{
+    padding: 1rem;
+    color: #f094dc;
+}
+.info-text-content{
+    padding: 0.5%;
+    text-align: center;
+}
+
+.info-section-title::after{
+    content: "";
+    display: block;
+    width:98%;
+    height:0.2rem;
+    background-color: #f094dc;
+}
+.info-detail{
+    padding: 0.5%;
+    color: black;
+    background-color: blanchedalmond;
+    display: block;
+    font-size: 1rem;
+    text-align: justify;
+   
+}
+.info-small-img-bar{
+    width:100%;
+}
+.info-small-img-container{
+    width:100%;
+    
+}
+
+.info-small-img{
+    width:100%;
+   
+}
+
+/*************footer*************/
+#footer{
+    background-color: #383739;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-content{
+    color:cyan;
+    font-size: 2rem;
+}
+
+
+/****************** >400****************************************************/
+@media(max-width: 360px){
+    #img-logo{
+  
+        width:10rem;
+        
+    }
+    
+    
+    #img-contact{
+        
+        width:10rem;
+        
+        display: flex;
+        
+    }
+    .home-container-small-img{
+        width:5.6rem; 
+       
+       }
+    
+}
+
+/****************** >500****************************************************/
+@media(max-width: 576px){
+    #img-logo{
+  
+        width:10rem;
+        
+    }
+    
+    
+    #img-contact{
+        
+        width:10rem;
+        
+        display: flex;
+        
+    } 
+}
+/****************** >900****************************************************/
+@media(min-width: 576px){
+    #img-logo{
+  
+        width:12rem;
+        
+    }
+    
+    
+    #img-contact{
+        
+        width:12rem;
+        
+        display: flex;
+        
+    } 
+   
+}
+/****************** >1000****************************************************/
+@media(min-width: 768px){
+    #img-logo{
+  
+        width:14rem;
+        
+    }
+    
+    
+    #img-contact{
+        
+        width:14rem;
+        
+        display: flex;
+        
+    } 
+    
+    
+ }
